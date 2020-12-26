@@ -23,7 +23,7 @@ function App() {
 								</li>
 								<li>
 									<Link to="/" className="link">
-										Lorem
+										Contact
 									</Link>
 								</li>
 							</ul>
