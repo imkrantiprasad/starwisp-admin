@@ -233,7 +233,7 @@ input:focus {
 .notes {
 	background: #ffffff;
 	border-radius: 15px;
-	width: 40%;
+	width: 50%;
 	margin-top: 30px;
 	padding: 20px;
 }
@@ -374,5 +374,5 @@ input:focus {
 	font-size: 32px;
 	text-align: right;
 	margin-top: 28px;
-	padding-left: 120px;
+	padding-left: 100px;
 }
