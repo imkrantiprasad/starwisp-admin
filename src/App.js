@@ -1,7 +1,8 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import Admin from "./components/Admin";
 import Post from "./components/Posts";
+import Contact from "./components/Contact";
 
 function App() {
 	return (
@@ -12,19 +13,29 @@ function App() {
 						<div className="links">
 							<ul>
 								<li>
-									<Link to="/" className="link">
+									<NavLink
+										to="/"
+										activeStyle={{ backgroundColor: "#FFC480" }}
+										className="link"
+										exact="true">
 										Dashboard
-									</Link>
+									</NavLink>
 								</li>
 								<li>
-									<Link to="/post" className="link">
+									<NavLink
+										to="/post"
+										activeStyle={{ backgroundColor: "#FFC480" }}
+										className="link">
 										Post
-									</Link>
+									</NavLink>
 								</li>
 								<li>
-									<Link to="/" className="link">
+									<NavLink
+										to="/contact"
+										activeStyle={{ backgroundColor: "#FFC480" }}
+										className="link">
 										Contact
-									</Link>
+									</NavLink>
 								</li>
 							</ul>
 						</div>
@@ -32,6 +43,7 @@ function App() {
 					<div>
 						<Route exact path="/" component={Admin} />
 						<Route exact path="/post" component={Post} />
+						<Route exact path="/contact" component={Contact} />
 					</div>
 				</div>
 			</Router>

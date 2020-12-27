@@ -18,7 +18,7 @@ function Posts() {
 	const addPost = (msg) => {
 		const newPosts = [...posts, { msg }];
 		setPost(newPosts);
-		posts.reverse();
+		posts.reverse(); 	 	
 	};
 
 	const handleSubmit = (e) => {
